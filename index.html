@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Servis – opravy PC a notebooků, instalace Windows, záchrana dat, nastavení Wi-Fi a IT podpora pro domácnosti i malé firmy. Rychle, spolehlivě a za férové ceny." />
+  <meta name="author" content="IT Servis" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <!-- Open Graph / náhled při sdílení -->
+  <meta property="og:title" content="IT Servis – rychlá a spolehlivá IT pomoc" />
+  <meta property="og:description" content="Opravy PC, instalace Windows, záchrana dat, sítě a IT podpora pro domácnosti i firmy." />
+  <meta property="og:type" content="website" />
+
+  <title>IT Servis – rychlá a spolehlivá IT pomoc</title>
+
+  <!-- Favicon (inline SVG, žádné externí soubory) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1020'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='15' font-weight='bold' fill='%2338bdf8'%3EIT%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Inter (zdarma) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ====================== HLAVIČKA / NAVIGACE ====================== -->
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="IT Servis – domů">
+        <span class="logo__mark">&lt;/&gt;</span>
+        <span class="logo__text">IT&nbsp;Servis</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Hlavní navigace">
+        <ul class="nav__list">
+          <li><a href="#sluzby" class="nav__link">Služby</a></li>
+          <li><a href="#proc-my" class="nav__link">Proč my</a></li>
+          <li><a href="#cenik" class="nav__link">Ceník</a></li>
+          <li><a href="#postup" class="nav__link">Postup</a></li>
+          <li><a href="#reference" class="nav__link">Reference</a></li>
+          <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+        </ul>
+        <a href="#kontakt" class="btn btn--primary nav__cta">Nezávazná poptávka</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__badge"><span class="dot"></span> Dostupný i o víkendu &middot; výjezd do 24 h</p>
+          <h1 class="hero__title">
+            Váš počítač zase <span class="grad-text">poletí.</span><br />
+            IT starosti nechte na nás.
+          </h1>
+          <p class="hero__subtitle">
+            Opravy PC a notebooků, instalace systémů, záchrana dat a IT podpora
+            pro domácnosti i malé firmy. Férové ceny, srozumitelná domluva
+            a žádný technický žargon.
+          </p>
+          <div class="hero__actions">
+            <a href="#kontakt" class="btn btn--primary btn--lg">Nezávazně poptat</a>
+            <a href="#sluzby" class="btn btn--ghost btn--lg">Prohlédnout služby</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>500+</strong><span>spokojených zákazníků</span></li>
+            <li><strong>do 24 h</strong><span>reakce na poptávku</span></li>
+            <li><strong>4,9/5</strong><span>průměrné hodnocení</span></li>
+          </ul>
+        </div>
+
+        <!-- Dekorativní „terminál" karta -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__title">it-servis — diagnostika</span>
+            </div>
+            <pre class="terminal__body"><code><span class="t-prompt">$</span> diagnostika --start
+<span class="t-ok">✓</span> Kontrola disku............. OK
+<span class="t-ok">✓</span> Teploty CPU/GPU........... OK
+<span class="t-warn">!</span> Spouštění systému......... 92&nbsp;s
+<span class="t-prompt">$</span> optimalizace --apply
+<span class="t-ok">✓</span> Vyčištěno 14,2&nbsp;GB
+<span class="t-ok">✓</span> Start systému............. 11&nbsp;s
+<span class="t-prompt">$</span> <span class="t-cursor">▍</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DŮVĚRA / LOGA ====================== -->
+    <section class="trust" aria-label="Na čem nám záleží">
+      <div class="container trust__inner">
+        <span class="trust__item">⚡ Rychlé jednání</span>
+        <span class="trust__item">🔒 Diskrétnost a bezpečí dat</span>
+        <span class="trust__item">💬 Vysvětlíme srozumitelně</span>
+        <span class="trust__item">🧾 Cena předem, žádná překvapení</span>
+      </div>
+    </section>
+
+    <!-- ====================== SLUŽBY ====================== -->
+    <section class="section" id="sluzby">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Co umím</p>
+          <h2 class="section__title">Služby, které vám ušetří čas i nervy</h2>
+          <p class="section__lead">Od drobné opravy po kompletní péči o vaše zařízení a síť.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">🛠️</div>
+            <h3 class="card__title">Opravy PC a notebooků</h3>
+            <p class="card__text">Diagnostika a oprava hardwaru i softwaru – nestartuje systém, modré obrazovky, výměna disku, RAM nebo displeje.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">💿</div>
+            <h3 class="card__title">Instalace Windows a softwaru</h3>
+            <p class="card__text">Čistá instalace Windows, ovladačů a běžných programů. Přenesu vaše data a vše nastavím k okamžitému použití.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">⚡</div>
+            <h3 class="card__title">Čištění a zrychlení počítače</h3>
+            <p class="card__text">Odstranění zpomalých procesů a nevyžádaného softwaru, fyzické vyčištění a optimalizace. Počítač jako nový.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🛡️</div>
+            <h3 class="card__title">Záchrana dat</h3>
+            <p class="card__text">Obnova smazaných nebo nedostupných souborů z disků, SSD i flash disků. Citlivě a diskrétně.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">📶</div>
+            <h3 class="card__title">Nastavení Wi-Fi a sítí</h3>
+            <p class="card__text">Konfigurace routerů, posílení signálu, zabezpečení sítě a propojení zařízení i tiskáren v domácnosti či kanceláři.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🤝</div>
+            <h3 class="card__title">IT podpora pro domácnosti a firmy</h3>
+            <p class="card__text">Pravidelná i jednorázová pomoc, vzdálená podpora a poradenství při nákupu techniky. Váš IT člověk po ruce.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PROČ SI VYBRAT NÁS ====================== -->
+    <section class="section section--alt" id="proc-my">
+      <div class="container why__grid">
+        <div class="why__intro reveal">
+          <p class="eyebrow">Proč si vybrat nás</p>
+          <h2 class="section__title">Spolehlivost, které rozumíte</h2>
+          <p class="section__lead">
+            Nejsem anonymní callcentrum. Jsem konkrétní člověk, který vám
+            zvedne telefon, přijede a problém vyřeší – a vysvětlí ho lidsky.
+          </p>
+          <a href="#kontakt" class="btn btn--primary">Domluvit se</a>
+        </div>
+
+        <ul class="why__list">
+          <li class="why__item reveal">
+            <span class="why__num">01</span>
+            <div>
+              <h3>Rychlá reakce</h3>
+              <p>Ozvu se zpravidla do několika hodin, výjezd domluvíme klidně na další den.</p>
+            </div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__num">02</span>
+            <div>
+              <h3>Cena předem</h3>
+              <p>Než cokoli udělám, dozvíte se odhad ceny. Žádné nemilé překvapení na faktuře.</p>
+            </div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__num">03</span>
+            <div>
+              <h3>Férový přístup</h3>
+              <p>Když se oprava nevyplatí, řeknu to na rovinu a poradím lepší řešení.</p>
+            </div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__num">04</span>
+            <div>
+              <h3>Bezpečí vašich dat</h3>
+              <p>S vašimi soubory zacházím diskrétně a vždy se snažím o jejich zachování.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====================== CENÍK ====================== -->
+    <section class="section" id="cenik">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Orientační ceník</p>
+          <h2 class="section__title">Přehledné ceny bez skrytých poplatků</h2>
+          <p class="section__lead">Uvedené ceny jsou orientační. Přesnou cenu vždy potvrdím předem podle rozsahu práce.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="price-card reveal">
+            <h3 class="price-card__name">Diagnostika</h3>
+            <p class="price-card__price"><span>od</span> 299 Kč</p>
+            <p class="price-card__note">Při následné opravě zdarma.</p>
+            <ul class="price-card__list">
+              <li>Zjištění závady HW i SW</li>
+              <li>Návrh řešení a odhad ceny</li>
+              <li>Srozumitelné vysvětlení</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--ghost btn--block">Objednat</a>
+          </article>
+
+          <article class="price-card price-card--featured reveal">
+            <span class="price-card__badge">Nejoblíbenější</span>
+            <h3 class="price-card__name">Instalace &amp; optimalizace</h3>
+            <p class="price-card__price"><span>od</span> 799 Kč</p>
+            <p class="price-card__note">Kompletní zprovoznění počítače.</p>
+            <ul class="price-card__list">
+              <li>Instalace Windows a ovladačů</li>
+              <li>Přenos dat a základní programy</li>
+              <li>Čištění a zrychlení systému</li>
+              <li>Aktualizace a zabezpečení</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--primary btn--block">Objednat</a>
+          </article>
+
+          <article class="price-card reveal">
+            <h3 class="price-card__name">IT podpora</h3>
+            <p class="price-card__price"><span>od</span> 399 Kč<small>/h</small></p>
+            <p class="price-card__note">Pro domácnosti i malé firmy.</p>
+            <ul class="price-card__list">
+              <li>Vzdálená i osobní pomoc</li>
+              <li>Sítě, Wi-Fi a tiskárny</li>
+              <li>Poradenství při nákupu</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--ghost btn--block">Objednat</a>
+          </article>
+        </div>
+
+        <p class="pricing__footnote reveal">
+          🛡️ Záchrana dat se oceňuje individuálně podle rozsahu poškození – vždy po nezávazné konzultaci.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================== JAK SPOLUPRÁCE PROBÍHÁ ====================== -->
+    <section class="section section--alt" id="postup">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Jak spolupráce probíhá</p>
+          <h2 class="section__title">Čtyři jednoduché kroky</h2>
+          <p class="section__lead">Od první zprávy k vyřešenému problému – jednoduše a bez stresu.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3 class="step__title">Ozvete se</h3>
+            <p class="step__text">Napíšete přes formulář, zavoláte nebo pošlete e-mail. Popíšete, co se děje.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3 class="step__title">Diagnostika &amp; cena</h3>
+            <p class="step__text">Zjistím závadu a navrhnu řešení. Vždy předem řeknu, kolik to bude stát.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3 class="step__title">Oprava</h3>
+            <p class="step__text">Po vašem odsouhlasení se pustím do práce – na místě, u mě, nebo vzdáleně.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">4</span>
+            <h3 class="step__title">Předání &amp; záruka</h3>
+            <p class="step__text">Vše vyzkoušíme společně. Na provedenou práci dostanete záruku.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== REFERENCE ====================== -->
+    <section class="section" id="reference">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Reference</p>
+          <h2 class="section__title">Co říkají zákazníci</h2>
+          <p class="section__lead">Ukázkové recenze (demo) – takhle vypadá spokojenost našich klientů.</p>
+        </div>
+
+        <div class="reviews">
+          <figure class="review reveal">
+            <div class="review__stars" aria-label="Hodnocení 5 z 5">★★★★★</div>
+            <blockquote class="review__text">„Notebook nestartoval a bál jsem se o fotky z dovolené. Všechno se podařilo zachránit a ještě k tomu poradil, jak na to příště. Naprostá spokojenost.“</blockquote>
+            <figcaption class="review__author">
+              <span class="review__avatar">JN</span>
+              <span><strong>Jan Novák</strong><small>domácí uživatel</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <div class="review__stars" aria-label="Hodnocení 5 z 5">★★★★★</div>
+            <blockquote class="review__text">„Pro naši kancelář řešil Wi-Fi a propojení tiskáren. Rychlé, ochotné a hlavně to celé vysvětlil tak, že jsme rozuměli. Doporučuji.“</blockquote>
+            <figcaption class="review__author">
+              <span class="review__avatar">PS</span>
+              <span><strong>Petra Svobodová</strong><small>vedoucí kanceláře</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <div class="review__stars" aria-label="Hodnocení 5 z 5">★★★★★</div>
+            <blockquote class="review__text">„Počítač byl k neudržení pomalý. Po vyčištění a instalaci běží jako nový a cena byla přesně taková, jaká byla domluvená předem.“</blockquote>
+            <figcaption class="review__author">
+              <span class="review__avatar">MK</span>
+              <span><strong>Martin Kučera</strong><small>OSVČ</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== KONTAKT ====================== -->
+    <section class="section section--alt" id="kontakt">
+      <div class="container contact__grid">
+        <div class="contact__intro reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="section__title">Napište mi, ozvu se</h2>
+          <p class="section__lead">
+            Popište svůj problém co nejvíc to půjde. Čím víc detailů, tím
+            přesnější odhad ceny i řešení.
+          </p>
+
+          <ul class="contact__info">
+            <li>
+              <span class="contact__ico">📞</span>
+              <span><small>Telefon</small><a href="tel:+420777123456">+420&nbsp;777&nbsp;123&nbsp;456</a></span>
+            </li>
+            <li>
+              <span class="contact__ico">✉️</span>
+              <span><small>E-mail</small><a href="mailto:info@itservis-demo.cz">info@itservis-demo.cz</a></span>
+            </li>
+            <li>
+              <span class="contact__ico">📍</span>
+              <span><small>Působnost</small>Praha a okolí (do 30&nbsp;km)</span>
+            </li>
+            <li>
+              <span class="contact__ico">🕘</span>
+              <span><small>Otevírací doba</small>Po–Ne&nbsp;8:00–20:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulář – frontend demo (neodesílá reálná data) -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Jméno a příjmení</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Jan Novák" required />
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+420 777 123 456" />
+              <span class="form-error" data-for="phone"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="vas@email.cz" required />
+            <span class="form-error" data-for="email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Čeho se dotaz týká?</label>
+            <select id="service" name="service">
+              <option value="Opravy PC a notebooků">Opravy PC a notebooků</option>
+              <option value="Instalace Windows a softwaru">Instalace Windows a softwaru</option>
+              <option value="Čištění a zrychlení počítače">Čištění a zrychlení počítače</option>
+              <option value="Záchrana dat">Záchrana dat</option>
+              <option value="Nastavení Wi-Fi a sítí">Nastavení Wi-Fi a sítí</option>
+              <option value="IT podpora">IT podpora</option>
+              <option value="Něco jiného">Něco jiného</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Zpráva</label>
+            <textarea id="message" name="message" rows="5" placeholder="Popište prosím, co se děje…" required></textarea>
+            <span class="form-error" data-for="message"></span>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" id="gdpr" name="gdpr" required />
+            <span>Souhlasím se zpracováním údajů za účelem vyřízení poptávky.</span>
+          </label>
+          <span class="form-error" data-for="gdpr"></span>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Odeslat poptávku</button>
+
+          <p class="form-note">Toto je ukázkový (demo) formulář – data se nikam neodesílají.</p>
+
+          <!-- Hláška po odeslání -->
+          <div class="form-success" id="formSuccess" role="status" hidden>
+            ✅ Děkujeme! Vaše poptávka byla „odeslána“. Brzy se vám ozveme.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== PATIČKA ====================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo">
+          <span class="logo__mark">&lt;/&gt;</span>
+          <span class="logo__text">IT&nbsp;Servis</span>
+        </a>
+        <p>Rychlá a srozumitelná IT pomoc pro domácnosti i malé firmy v Praze a okolí.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Navigace v patičce">
+        <h4>Služby</h4>
+        <ul>
+          <li><a href="#sluzby">Opravy PC a notebooků</a></li>
+          <li><a href="#sluzby">Instalace Windows</a></li>
+          <li><a href="#sluzby">Záchrana dat</a></li>
+          <li><a href="#sluzby">Wi-Fi a sítě</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+420777123456">+420 777 123 456</a></li>
+          <li><a href="mailto:info@itservis-demo.cz">info@itservis-demo.cz</a></li>
+          <li>Praha a okolí</li>
+          <li>Po–Ne 8:00–20:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> IT Servis. Demo web pro portfolio.</p>
+      <p class="footer__made">Vytvořeno jako ukázková práce &middot; HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Tlačítko „nahoru" -->
+  <button class="to-top" id="toTop" aria-label="Zpět nahoru" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Závislosti (kdyby přibyly)
+node_modules/
+package-lock.json
+
+# Systémové a editorové soubory
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.code-workspace
+
+# Logy
+*.log
+npm-debug.log*
+
+# Sestavené výstupy / dočasné soubory
+dist/
+build/
+.cache/
+.tmp/
+
+# Lokální / tajné soubory
+.env
+.env.local
+
+# Claude
+.claude/
